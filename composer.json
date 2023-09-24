@@ -1,0 +1,16 @@
+{
+    "name": "app",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "prospero"
+        }
+    ],
+    "require": {}
+}
