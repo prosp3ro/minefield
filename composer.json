@@ -1,5 +1,5 @@
 {
-    "name": "app",
+    "name": "prospero/app",
     "type": "project",
     "license": "MIT",
     "autoload": {
