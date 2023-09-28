@@ -12,5 +12,7 @@
             "name": "prospero"
         }
     ],
-    "require": {}
+    "require": {
+        "guzzlehttp/guzzle": "^7.8"
+    }
 }
