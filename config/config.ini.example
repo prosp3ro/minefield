@@ -3,6 +3,7 @@ name = App
 env = local
 debug = true
 domain = "localhost"
+emailable_api_key = ""
 
 [database]
 driver = mysql

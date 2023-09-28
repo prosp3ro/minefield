@@ -8,6 +8,7 @@ define('ROOT', __DIR__ . "/..");
 
 $config = parse_ini_file(ROOT . "/config/config.ini", true);
 define('APP_NAME', $config['app']['name'] ?? "App");
+define('EMAILABLE_API_KEY', $config['app']['emailable_api_key'] ?? "App");
 
 define('PARTIALS', ROOT . "/templates/partials");
 
