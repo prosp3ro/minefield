@@ -5,24 +5,21 @@ declare(strict_types=1);
 namespace App\Controllers;
 
 use App\View;
-use GuzzleHttp\Client;
 
 class IndexController
 {
     private View $view;
+    private Object $httpClient;
 
-    public function __construct(View $view)
+    public function __construct(View $view, Object $httpClient)
     {
         $this->view = $view;
+        $this->httpClient = $httpClient;
     }
 
     public function index()
     {
-        $client = new Client([
-            'base_uri' => "https://dummyjson.com/"
-        ]);
-
-        $response = $client->patch("/products/1", [
+        $response = $this->httpClient->patch("https://dummyjson.com/products/1", [
             "headers" => [
                 "Content-type" => "application/json; charset=UTF-8"
             ],
