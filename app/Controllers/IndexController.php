@@ -42,16 +42,18 @@ class IndexController
         $connection = DriverManager::getConnection($connectionParams);
         $queryBuilder = $connection->createQueryBuilder();
 
-        $id = 3;
-
         $result = $queryBuilder
-            ->select('id, login, email')
-            ->from('admins')
+            ->select('*')
+            ->from('books')
         ;
 
         $asd = $result->fetchAllAssociative();
         dd($asd);
         die();
+
+        // $schema = $connection->createSchemaManager();
+        // dd($schema->listTableColumns("books"));
+        // die();
 
         // return $this->view->render("index");
     }
