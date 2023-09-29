@@ -9,7 +9,7 @@ use App\Exceptions\ConfigurationException;
 use App\Exceptions\DatabaseConnectionException;
 use Throwable;
 
-class Model extends PDO
+class DB extends PDO
 {
     public function __construct(string $file = __DIR__ . "/../../config/config.ini")
     {

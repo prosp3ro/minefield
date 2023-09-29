@@ -1,6 +1,7 @@
 <?php
 
 use App\Controllers\IndexController;
+use App\Models\DB;
 use App\Route;
 use App\View;
 use GuzzleHttp\Client;
